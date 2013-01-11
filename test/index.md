@@ -1,7 +1,7 @@
 # ViewAssets
 ViewAssets(VA) 是一个简单的 Javascript, Stylesheets 依赖管理器。 根据 Rails 3.2 中的 asset pipeline，它会默认加载所有的 assets 资源，这样其实对于富 JS 应用而言并不是特别有利。因为每个页面有可能都包含着大量其它页面都需要用到的文件资源。VA 就是为了解决这个问题而提出来的。它支持每个页面都能够加载自己需要的 assets 资源，同时也保留了 assets pipeline 自动处理依赖的优点。   
 
-简单的概括这个 gem 就是它将在 view 中 *.html.erb 中声明的依赖转移到 js/css 文件中。在特定的文件(manifest file)中使用规定的语法(directive)声明依赖。   
+简单的概括这个 <span style='color:red;'>gem</span> 就是它将在 view 中 *.html.erb 中声明的依赖转移到 js/css 文件中。在特定的文件(manifest file)中使用规定的语法(directive)声明依赖。   
 
 ## Example
 

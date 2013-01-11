@@ -2,4 +2,4 @@
 require 'rubygems'
 require 'markdown_to_html'
 
-MarkdownToHtml::Renderer.new(ARGV[0])
+MarkdownToHtml::Renderer.new(ARGV[0], ARGV[1])
