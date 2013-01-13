@@ -15,7 +15,12 @@ module MarkdownToHtml
   end
   
   class Renderer
-    def initialize(markdown_file, html_file = nil)
+    def initialize(markdown_file = nil, html_file = nil)
+      if markdown_file.nil? || %w(-h --help).include?(markdown_file)
+        puts "Usage: markdown_to_html your_markdown_file [html]"
+        return
+      end
+      
       markdown = Redcarpet::Markdown.new(HTMLWithPygments,
                                          :fenced_code_blocks => true,
                                          :no_intra_emphasis => true)

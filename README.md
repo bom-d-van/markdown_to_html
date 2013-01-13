@@ -1,6 +1,6 @@
 # MarkdownToHtml
 
-TODO: Write a gem description
+With the funtionality of rendering github flavored markdown file into a html file, markdown_to_html also offers user a good-looking html style, making reading rendered html document an enjoyment.
 
 ## Installation
 
@@ -18,7 +18,7 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+    markdown_to_html your_markdown_file [html_output_name] 
 
 ## Contributing
 
