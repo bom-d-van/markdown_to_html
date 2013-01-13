@@ -12,8 +12,8 @@ Gem::Specification.new do |gem|
   gem.summary       = %q{With the funtionality of rendering github flavored markdown file into a html file, markdown_to_html also offers user a good-looking html style, making reading rendered html document an enjoyment.}
   gem.homepage      = ""
 
-  gem.add_runtime_dependency 'redcarpet'
-  gem.add_runtime_dependency 'pygments.rb'
+  gem.add_runtime_dependency 'redcarpet', ['= 2.2.2']
+  gem.add_runtime_dependency 'pygments.rb', ['= 0.3.7']
   # gem.add_runtime_dependency 'nokogiri'
   
   gem.files         = `git ls-files`.split($/)
